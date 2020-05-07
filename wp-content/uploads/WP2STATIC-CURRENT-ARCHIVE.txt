@@ -1,1 +1,0 @@
-/opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/wp-static-html-output-1575382798/
