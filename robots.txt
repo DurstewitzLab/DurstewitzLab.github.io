@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 
-Sitemap: https://durstewitzlab.github.io/wp-sitemap.xml
+Sitemap: http://OFFLINEZIP.wpshowp-sitemap.xml
