@@ -1,0 +1,10 @@
+title: Theoretical Neuroscience
+description: Durstewitz Lab — dynamical systems, machine learning, and theoretical neuroscience
+baseurl: ""
+url: "https://durstewitzlab.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins: []

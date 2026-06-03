@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var stored;
+      try {
+        stored = localStorage.getItem("theme");
+      } catch (err) {
+        stored = null;
+      }
+      if (stored === "light" || stored === "dark") {
+        root.setAttribute("data-theme", stored);
+      }
+    })();
+  </script>
+  <script defer src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+</head>
+<body>
+  {% include nav.html %}
+  <main class="container">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.querySelector("[data-theme-toggle]");
+      var query = window.matchMedia("(prefers-color-scheme: dark)");
+      var navToggle = document.querySelector("[data-nav-toggle]");
+      var navPanel = document.querySelector("[data-nav-panel]");
+
+      function currentTheme() {
+        if (root.dataset.theme === "light" || root.dataset.theme === "dark") {
+          return root.dataset.theme;
+        }
+        return query.matches ? "dark" : "light";
+      }
+
+      function setTheme(theme, persist) {
+        root.setAttribute("data-theme", theme);
+        if (persist) {
+          try {
+            localStorage.setItem("theme", theme);
+          } catch (err) {
+            // Ignore localStorage restrictions.
+          }
+        }
+        if (toggle) {
+          toggle.checked = theme === "dark";
+        }
+      }
+
+      if (toggle) {
+        setTheme(currentTheme(), false);
+        toggle.addEventListener("change", function () {
+          var next = currentTheme() === "dark" ? "light" : "dark";
+          setTheme(next, true);
+        });
+      }
+
+      if (navToggle && navPanel) {
+        navToggle.addEventListener("click", function () {
+          var isOpen = navPanel.classList.toggle("is-open");
+          navToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        navPanel.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            navPanel.classList.remove("is-open");
+            navToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

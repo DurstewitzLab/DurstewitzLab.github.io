@@ -1,0 +1,206 @@
+- name: Prof. Dr. Daniel Durstewitz
+  role: Principal Investigator
+  email: daniel.durstewitz@zi-mannheim.de
+  scholar: "https://scholar.google.com/citations?user=2bcbKU0AAAAJ"
+  github: "https://github.com/durstewitzlab"
+
+
+
+- name: Matthijs Pals
+  role: Postdoctoral Researcher
+  email: matthijs.pals@zi-mannheim.de
+
+
+
+- name: Florian Hess
+  role: PhD Candidate
+  email: florian.hess@zi-mannheim.de
+
+- name: Lukas Eisenmann
+  role: PhD Candidate
+  email: lukas.eisenmann@zi-mannheim.de
+  # portrait: assets/images/team/lukas_eisenmann.jpg
+
+- name: Alena Brändle
+  role: PhD Candidate
+  email: alena.braendle@zi-mannheim.de
+
+- name: Christoph Hemmer
+  role: PhD Candidate
+  email: cristoph.hemmer@zi-mannheim.de
+  # portrait: assets/images/team/christoph_hemmer.jpg
+
+- name: Florian Götz
+  role: PhD Candidate
+  email: florian.goetz@zi-mannheim.de
+
+- name: Elias Weber
+  role: PhD Candidate
+  email: elias.weber@zi-mannheim.de
+  # portrait: assets/images/team/elias_weber.jpg
+
+- name: Georg Trede
+  role: PhD Candidate
+  email: georg.trede@zi-mannheim.de
+
+- name: Charlotte Doll
+  role: PhD Candidate
+  email: charlotte.doll@zi-mannheim.de
+
+- name: Sámuel Szajbély
+  role: PhD Candidate
+  email: samuel.szajbely@zi-mannheim.de
+  # portrait: assets/images/team/samuel_szajbely.jpg
+
+- name: Marcel Morr
+  role: PhD Candidate
+  email: marcel.morr@zi-mannheim.de
+
+- name: Zekai Xu
+  role: PhD Candidate
+  email: zekai.xu@zi-mannheim.de
+
+
+
+- name: Niklas Thorsson
+  role: Master Student
+
+- name: Noah Kriesch
+  role: Master Student
+
+- name: Markus Fahrländer
+  role: Master Student
+
+- name: Jakob Kreft
+  role: Master Student
+
+- name: Maximilian Rumpf
+  role: Master Student
+
+- name: Erik Burs
+  role: Master Student
+  # portrait: assets/images/team/erik_burs.jpg
+
+- name: Sam Rouppe van der Voort
+  role: Master Student
+
+- name: Oliver Sange
+  role: Master Student
+
+- name: Miriam Kaden
+  role: Master Student
+
+- name: Florian Plaswig
+  role: Master Student
+
+- name: Koray Lenkeit
+  role: Master Student
+
+- name: Jamal Lkhaouni
+  role: Master Student
+
+
+
+- name: Maximilian Werr
+  role: Research Assistant
+
+- name: Kirthana Vijay
+  role: Research Assistant
+
+
+
+- name: Dr. Max Ingo Thurm
+  role: Alumni
+
+- name: Dr. Manuel Brenner
+  role: Alumni
+  website: "https://esi-frankfurt.de/research/labs/brenner-lab/"
+
+- name: Janik Fechtelpeter
+  role: Alumni
+
+- name: Dr. Zahra Monfared
+  role: Alumni
+  website: "https://zmonfared.github.io/DSAIlab/"
+
+- name: Prof. Dr. Georgia Koppe
+  role: Alumni
+  website: "https://humml.iwr.uni-heidelberg.de/"
+
+- name: Dr. Han Cao
+  role: Alumni
+
+- name: Sadjad Sadeghi
+  role: Alumni
+  website: "https://www.zi-mannheim.de/forschung/personen/person/9985.html"
+
+- name: Dr. Florian Bähner
+  role: Alumni
+  website: "http://www.zi-mannheim.de/forschung/personen/person/5184.html"
+
+- name: Dr. Thomas T.G. Hahn
+  role: Alumni
+  website: "http://www.zi-mannheim.de/forschung/personen/person/2547.html"
+
+- name: Dr. Sven Berberich
+  role: Alumni
+  website: "https://www.zi-mannheim.de/forschung/personen/person/5548.html"
+
+- name: Dr. Eleonora Russo
+  role: Alumni
+  website: "https://www.zi-mannheim.de/forschung/personen/person/6783.html"
+
+- name: Thomas Leib
+  role: Alumni
+
+- name: Jonas Mikhaeil
+  role: Alumni
+
+- name: Leonard Bereska
+  role: Alumni
+
+- name: Saranraj Nambusubramaniyan
+  role: Alumni
+
+- name: Dr. Dominik Schmidt
+  role: Alumni
+  website: "https://www.zi-mannheim.de/forschung/personen/person/10943.html"
+
+- name: Dr. Hazem Toutounji
+  role: Alumni
+  website: "http://www.zi-mannheim.de/en/research/people/person/8943.html"
+
+- name: Dr. Grant Sutcliffe
+  role: Alumni
+  website: "http://www.zi-mannheim.de/forschung/personen/person/5193.html"
+
+- name: Dr. Thomas Fucke
+  role: Alumni
+  website: "http://www.zi-mannheim.de/forschung/personen/person/6785.html"
+
+- name: Dr. Claudio S. Quiroga-Lombard
+  role: Alumni
+  website: "http://www.zi-mannheim.de/forschung/personen/person/5194.html"
+
+- name: Dr. Olga Kornienko
+  role: Alumni
+  website: "https://www.zi-mannheim.de/forschung/personen/person/6784.html"
+
+- name: Dr. Loreen Hertäg
+  role: Alumni
+  website: "https://www.cognition.tu-berlin.de/menue/members/loreen_hertaeg/"
+
+- name: Dr. Tatiana Golovko
+  role: Alumni
+
+- name: Dr. Charmaine Demanuele
+  role: Alumni
+  website: "http://nmr.mgh.harvard.edu/manoachlab/people.html"
+
+- name: Dr. Emili Balaguer-Ballester
+  role: Alumni
+  website: "http://www.bccn-heidelberg-mannheim.de/pub/benutzer_persdaten_for.php?a=0300002700000000000000000000000300000000100000201000100"
+
+- name: Dr. Joachim Hass
+  role: Alumni
+  website: "https://www.zi-mannheim.de/forschung/personen/person/5191.html"

@@ -1,0 +1,62 @@
+- title: Computational Statistics and Data Analysis
+  latest_iteration: Summer Term 2026
+  image: ""
+  summary: >
+    This lecture introduces core concepts in probability, statistical inference, and computational modeling,
+    with a progression from classical methods to modern machine learning approaches for data analysis.
+  outline:
+    - Overview and basics of probability theory
+    - Discrete/continuous distributions and exponential-family models
+    - Moment generating functions and statistical models
+    - Statistical inference and parameter estimation
+    - Numerical methods and statistical hypothesis tests
+    - Asymptotic tests, CLT, and bootstrap-based tests
+    - Linear and nonlinear regression models
+    - Neural networks and nonlinear regression
+    - Classification models I and II
+    - Regularization and dimensionality reduction
+    - Latent variable models
+    - Variational inference and generative adversarial networks
+
+- title: Dynamical Systems Theory in Machine Learning
+  latest_iteration: Winter Term 2025/26
+  image: ""
+  summary: >
+    Dynamical systems theory provides a mathematical framework for understanding processes that evolve in time,
+    from neural activity to engineered systems. The course connects classical DST concepts to modern ML-based
+    system reconstruction.
+  outline:
+    - Introduction to dynamical systems and linear ODE systems
+    - Equilibrium/fixed-point properties and stability analysis
+    - Nonlinear ODE systems, limit cycles, and phase locking
+    - Hamiltonian systems, potentials/gradients, and Lyapunov functions
+    - Recursive maps, Poincare maps, and symbolic dynamics
+    - Chaos, fractals, invariant measures, and Lyapunov exponents
+    - Local and global bifurcations
+    - "Dynamical systems from data: delay embedding and dimension estimation"
+    - "ML models for DS reconstruction: SINDy, reservoir computing, and RNNs"
+    - "RNN training dynamics: exploding gradients and bifurcation effects"
+    - Neural ODEs, PINNs, and neural operators
+    - Manifold detection, multimodal training, and tracking across tipping points
+    - Out-of-domain generalization and foundation models for DS reconstruction
+
+- title: "Time Series Models: From Statistics to AI"
+  latest_iteration: Summer Term 2025
+  image: ""
+  summary: >
+    Time series are central across science, medicine, economics, and engineering. This course bridges
+    statistical models and modern AI systems for forecasting and mechanistic understanding of latent dynamics.
+  outline:
+    - Statistical foundations and model classes for time series
+    - Linear ARMA and multivariate AR models
+    - Granger causality and non-Gaussian count/point-process models
+    - Linear dynamical systems and latent-variable state-space models
+    - EM, Kalman filtering/smoothing, and non-Gaussian LDS inference
+    - Intro to nonlinear dynamics for time-series modeling
+    - Recurrent neural networks and gradient-based training (BPTT/RTRL)
+    - Long-term dependencies, LSTM/GRU, and generalized teacher forcing
+    - "Modern recurrent architectures: Reservoir Computing, AL-RNN, and Mamba"
+    - Stochastic/multimodal RNNs, VAEs, and variational inference
+    - Neural ODEs for continuous-time point processes
+    - Attention/self-attention, transformers, and TS foundation models
+    - In-context learning and zero-shot inference for TS models

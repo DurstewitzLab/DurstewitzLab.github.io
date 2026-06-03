@@ -1,0 +1,42 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="site-brand">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      {% if site.data.site.organization %}
+        {% if site.data.site.organization_url %}
+          <a class="site-subtitle" href="{{ site.data.site.organization_url }}">{{ site.data.site.organization }}</a>
+        {% else %}
+          <span class="site-subtitle">{{ site.data.site.organization }}</span>
+        {% endif %}
+      {% endif %}
+    </div>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav-panel">
+      <span class="iconify" data-icon="mdi:menu" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <div class="nav-controls" id="site-nav-panel" data-nav-panel>
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/team/' | relative_url }}">Team</a>
+        <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a href="{{ '/materials/' | relative_url }}">Materials</a>
+        <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+
+      <label class="theme-switch" aria-label="Toggle light or dark color theme">
+        <input type="checkbox" data-theme-toggle />
+        <span class="theme-track" aria-hidden="true">
+          <span class="theme-thumb">
+            <span class="theme-mode-icon" aria-hidden="true">
+              <span class="iconify theme-icon-sun" data-icon="mdi:white-balance-sunny"></span>
+              <span class="iconify theme-icon-moon" data-icon="mdi:weather-night"></span>
+            </span>
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+</header>
