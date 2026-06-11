@@ -6,6 +6,7 @@ permalink: /team/
 
 <h1 class="team-page-title">Team</h1>
 
+{% assign attractor_url = '/assets/images/team/attractors/lorenz.svg' | relative_url %}
 {% assign ordered_groups = "Principal Investigator|Postdoctoral Researchers|PhD Candidates|Masters Students|Bachelors Students" | split: "|" %}
 {% for group_name in ordered_groups %}
 {% assign has_group_members = false %}
@@ -39,57 +40,13 @@ permalink: /team/
     <article class="team-card" data-sort-last="{{ last_name | downcase }}" data-sort-name="{{ member.name | downcase }}">
       <div class="team-portrait-wrap">
 {% if member.portrait %}
-          <img class="portrait" src="{{ member.portrait | relative_url }}" alt="Portrait of {{ member.name }}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
-          <div class="avatar" aria-hidden="true" style="display: none;">{{ member.name | slice: 0 }}</div>
+          <img class="portrait" src="{{ member.portrait.path | relative_url }}" alt="Portrait of {{ member.name }}" loading="lazy" style="object-position: {{ member.portrait.x | default: 50 }}% {{ member.portrait.y | default: 50 }}%;" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
+          <div class="avatar" aria-hidden="true" style="display: none;"><span class="attractor-avatar" aria-hidden="true" style="-webkit-mask-image:url('{{ attractor_url }}');mask-image:url('{{ attractor_url }}')"></span></div>
 {% else %}
-          <div class="avatar" aria-hidden="true">{{ member.name | slice: 0 }}</div>
+          <div class="avatar" aria-hidden="true"><span class="attractor-avatar" aria-hidden="true" style="-webkit-mask-image:url('{{ attractor_url }}');mask-image:url('{{ attractor_url }}')"></span></div>
 {% endif %}
       </div>
-      <div class="team-card-content">
-        <div class="team-header">
-          <div>
-            <h3>{{ member.name }}</h3>
-            <p class="muted role">{{ member.role }}</p>
-          </div>
-        </div>
-        <div class="team-header-actions">
-{% if member.website %}
-          <a class="team-action-icon" href="{{ member.website }}" aria-label="Website of {{ member.name }}">
-            <span class="iconify" data-icon="mdi:web" aria-hidden="true"></span>
-          </a>
-{% endif %}
-{% if member.email %}
-          <a class="team-action-icon" href="mailto:{{ member.email }}" aria-label="Email {{ member.name }}">
-            <span class="iconify" data-icon="mdi:email-outline" aria-hidden="true"></span>
-          </a>
-{% endif %}
-{% if member.scholar %}
-          <a class="team-action-icon" href="{{ member.scholar }}" aria-label="Google Scholar profile of {{ member.name }}">
-            <span class="iconify" data-icon="mdi:school-outline" aria-hidden="true"></span>
-          </a>
-{% endif %}
-{% if member.github %}
-          <a class="team-action-icon" href="{{ member.github }}" aria-label="GitHub profile of {{ member.name }}">
-            <span class="iconify" data-icon="mdi:github" aria-hidden="true"></span>
-          </a>
-{% endif %}
-{% if member.linkedin %}
-          <a class="team-action-icon" href="{{ member.linkedin }}" aria-label="LinkedIn profile of {{ member.name }}">
-            <span class="iconify" data-icon="mdi:linkedin" aria-hidden="true"></span>
-          </a>
-{% endif %}
-{% if member.orcid %}
-          <a class="team-action-icon" href="{{ member.orcid }}" aria-label="ORCID profile of {{ member.name }}">
-            <span class="iconify" data-icon="mdi:card-account-details-outline" aria-hidden="true"></span>
-          </a>
-{% endif %}
-        </div>
-{% if member.bio and member.bio != "" %}
-        <div class="team-bio">
-          <p>{{ member.bio }}</p>
-        </div>
-{% endif %}
-      </div>
+      <h3 class="team-name">{{ member.name }}</h3>
     </article>
 {% endfor %}
   </div>
@@ -121,37 +78,13 @@ permalink: /team/
     <article class="team-card" data-sort-last="{{ last_name | downcase }}" data-sort-name="{{ member.name | downcase }}">
       <div class="team-portrait-wrap">
 {% if member.portrait %}
-          <img class="portrait" src="{{ member.portrait | relative_url }}" alt="Portrait of {{ member.name }}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
-          <div class="avatar" aria-hidden="true" style="display: none;">{{ member.name | slice: 0 }}</div>
+          <img class="portrait" src="{{ member.portrait.path | relative_url }}" alt="Portrait of {{ member.name }}" loading="lazy" style="object-position: {{ member.portrait.x | default: 50 }}% {{ member.portrait.y | default: 50 }}%;" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
+          <div class="avatar" aria-hidden="true" style="display: none;"><span class="attractor-avatar" aria-hidden="true" style="-webkit-mask-image:url('{{ attractor_url }}');mask-image:url('{{ attractor_url }}')"></span></div>
 {% else %}
-          <div class="avatar" aria-hidden="true">{{ member.name | slice: 0 }}</div>
+          <div class="avatar" aria-hidden="true"><span class="attractor-avatar" aria-hidden="true" style="-webkit-mask-image:url('{{ attractor_url }}');mask-image:url('{{ attractor_url }}')"></span></div>
 {% endif %}
       </div>
-      <div class="team-card-content">
-        <div class="team-header">
-          <div>
-            <h3>{{ member.name }}</h3>
-            <p class="muted role">{{ member.role }}</p>
-          </div>
-        </div>
-        <div class="team-header-actions">
-{% if member.website %}
-          <a class="team-action-icon" href="{{ member.website }}" aria-label="Website of {{ member.name }}">
-            <span class="iconify" data-icon="mdi:web" aria-hidden="true"></span>
-          </a>
-{% endif %}
-{% if member.email %}
-          <a class="team-action-icon" href="mailto:{{ member.email }}" aria-label="Email {{ member.name }}">
-            <span class="iconify" data-icon="mdi:email-outline" aria-hidden="true"></span>
-          </a>
-{% endif %}
-        </div>
-{% if member.bio and member.bio != "" %}
-        <div class="team-bio">
-          <p>{{ member.bio }}</p>
-        </div>
-{% endif %}
-      </div>
+      <h3 class="team-name">{{ member.name }}</h3>
     </article>
 {% endfor %}
   </div>
@@ -162,7 +95,7 @@ permalink: /team/
 {% if alumni_members.size > 0 %}
 <section class="team-role-group">
   <h2>Alumni</h2>
-  <div class="team-grid">
+  <div class="team-grid alumni-grid">
 {% for member in alumni_members %}
 {% assign name_parts = member.name | split: " " %}
 {% assign last_name = name_parts | last %}

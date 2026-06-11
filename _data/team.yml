@@ -1,65 +1,58 @@
 - name: Prof. Dr. Daniel Durstewitz
   role: Principal Investigator
-  email: daniel.durstewitz@zi-mannheim.de
-  scholar: "https://scholar.google.com/citations?user=2bcbKU0AAAAJ"
-  github: "https://github.com/durstewitzlab"
-
 
 
 - name: Matthijs Pals
   role: Postdoctoral Researcher
-  email: matthijs.pals@zi-mannheim.de
-
+  portrait:
+    path: assets/images/team/matthijs_pals.png
 
 
 - name: Florian Hess
   role: PhD Candidate
-  email: florian.hess@zi-mannheim.de
 
 - name: Lukas Eisenmann
   role: PhD Candidate
-  email: lukas.eisenmann@zi-mannheim.de
-  # portrait: assets/images/team/lukas_eisenmann.jpg
+  portrait:
+    path: assets/images/team/lukas_eisenmann.jpg
+    x: 50
+    y: 15
 
 - name: Alena Brändle
   role: PhD Candidate
-  email: alena.braendle@zi-mannheim.de
 
 - name: Christoph Hemmer
   role: PhD Candidate
-  email: cristoph.hemmer@zi-mannheim.de
-  # portrait: assets/images/team/christoph_hemmer.jpg
+  portrait:
+    path: assets/images/team/christoph_hemmer.jpg
+    y: 0
 
 - name: Florian Götz
   role: PhD Candidate
-  email: florian.goetz@zi-mannheim.de
 
 - name: Elias Weber
   role: PhD Candidate
-  email: elias.weber@zi-mannheim.de
-  # portrait: assets/images/team/elias_weber.jpg
+  portrait:
+    path: assets/images/team/elias_weber.jpg
 
 - name: Georg Trede
   role: PhD Candidate
-  email: georg.trede@zi-mannheim.de
 
 - name: Charlotte Doll
   role: PhD Candidate
-  email: charlotte.doll@zi-mannheim.de
 
 - name: Sámuel Szajbély
   role: PhD Candidate
-  email: samuel.szajbely@zi-mannheim.de
-  # portrait: assets/images/team/samuel_szajbely.jpg
+  portrait:
+    path: assets/images/team/samuel_szajbely.jpg
+    x: 60
+    y: 0
 
 - name: Marcel Morr
   role: PhD Candidate
-  email: marcel.morr@zi-mannheim.de
 
 - name: Zekai Xu
   role: PhD Candidate
-  email: zekai.xu@zi-mannheim.de
-
 
 
 - name: Niklas Thorsson
@@ -79,7 +72,9 @@
 
 - name: Erik Burs
   role: Master Student
-  # portrait: assets/images/team/erik_burs.jpg
+  portrait:
+    path: assets/images/team/erik_burs.jpg
+    y: 10
 
 - name: Sam Rouppe van der Voort
   role: Master Student
@@ -99,6 +94,8 @@
 - name: Jamal Lkhaouni
   role: Master Student
 
+- name: Tim Merscher
+  role: Master Student
 
 
 - name: Moritz Werr
@@ -106,7 +103,6 @@
 
 - name: Kirthana Vijay
   role: Research Assistant
-
 
 
 - name: Dr. Max Ingo Thurm
