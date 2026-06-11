@@ -8,7 +8,7 @@ permalink: /
   <p class="kicker">Durstewitz Lab</p>
   <h1>Theoretical Neuroscience</h1>
   <p class="lead">
-    This website is currently under heavy development. For now, please refer to the <a href="{{ '/legacy-website/' | relative_url}}">legacy website</a>.
+    This website is still in development. For now, please refer to the <a href="{{ '/legacy-website/' | relative_url}}">legacy website</a>.
   </p>
   <p class="hero-actions">
     <a class="button button-primary" href="{{ '/publications/' | relative_url }}">Publications</a>
