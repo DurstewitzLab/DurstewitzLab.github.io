@@ -26,7 +26,7 @@ For a **user or organization site** served from the special `USERNAME.github.io`
 | File | Purpose |
 |------|---------|
 | `_config.yml` | Site title, `url`, and **`baseurl`** (see GitHub Pages below) |
-| `_data/site.yml` | Organization, contact, group photo |
+| `_data/site.yml` | Organization and group photo |
 | `_data/team.yml` | Team members |
 | `_data/teaching.yml` | Lectures (`latest_iteration`, outline, image) |
 | `_data/publications.bib` | BibTeX source |

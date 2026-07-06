@@ -17,6 +17,7 @@
     - Regularization and dimensionality reduction
     - Latent variable models
     - Variational inference and generative adversarial networks
+  moodle: https://moodle.uni-heidelberg.de/course/view.php?id=32050
 
 - title: Dynamical Systems Theory in Machine Learning
   latest_iteration: Winter Term 2025/26
@@ -39,6 +40,7 @@
     - Neural ODEs, PINNs, and neural operators
     - Manifold detection, multimodal training, and tracking across tipping points
     - Out-of-domain generalization and foundation models for DS reconstruction
+  moodle: https://moodle.uni-heidelberg.de/course/view.php?id=29124
 
 - title: "Time Series Models: From Statistics to AI"
   latest_iteration: Summer Term 2025
@@ -60,3 +62,4 @@
     - Neural ODEs for continuous-time point processes
     - Attention/self-attention, transformers, and TS foundation models
     - In-context learning and zero-shot inference for TS models
+  moodle: https://moodle.uni-heidelberg.de/course/view.php?id=26762

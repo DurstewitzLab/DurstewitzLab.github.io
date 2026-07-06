@@ -379,6 +379,163 @@ html[data-theme="dark"] .theme-icon-moon {
   display: block;
 }
 
+.office-with-map {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-top: 0.35rem;
+}
+
+.office-with-map .office-details {
+  min-width: 0;
+}
+
+.office-with-map .office-details p {
+  margin: 0;
+}
+
+.map-embed {
+  margin-top: 1rem;
+  height: 280px;
+  border-radius: 0.55rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: var(--tag-bg);
+}
+
+.office-with-map .map-embed {
+  margin-top: 0;
+  min-height: 280px;
+  height: 100%;
+}
+
+.map-embed .leaflet-control-attribution {
+  font-size: 0.68rem;
+}
+
+/* Homepage */
+main:has(.hero) {
+  padding-top: 1.5rem;
+}
+
+main:has(.hero) .hero {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid var(--border);
+}
+
+main:has(.hero) .hero .kicker {
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+main:has(.hero) .hero h1 {
+  margin-bottom: 0;
+}
+
+main:has(.hero) .hero .lead {
+  margin: 0;
+}
+
+main:has(.hero) .group-photo {
+  margin-bottom: 2.25rem;
+}
+
+main:has(.hero) > h1 {
+  margin-top: 0;
+  margin-bottom: 1.75rem;
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  text-wrap: balance;
+}
+
+main:has(.hero) h2:not(#key-references) {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1.15rem 1.25rem 0.55rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 0.55rem 0.55rem 0 0;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+main:has(.hero) h2:not(#key-references) + p {
+  margin-top: 0;
+  margin-bottom: 1.15rem;
+  padding: 0 1.25rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 1px solid color-mix(in srgb, var(--border) 65%, transparent);
+  border-radius: 0 0 0.55rem 0.55rem;
+  box-shadow: var(--shadow);
+  text-wrap: pretty;
+}
+
+main:has(.hero) h2:not(#key-references):not(:first-of-type) {
+  margin-top: 1.15rem;
+}
+
+main:has(.hero) h2#key-references {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+main:has(.hero) .ref-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main:has(.hero) .ref-item {
+  margin-bottom: 0;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.55rem;
+  box-shadow: var(--shadow);
+}
+
+main:has(.hero) .ref-title {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+main:has(.hero) .ref-meta {
+  margin-top: 0.35rem;
+  line-height: 1.55;
+}
+
+main:has(.hero) .ref-links {
+  margin-top: 0.55rem;
+  gap: 0.45rem;
+}
+
+main:has(.hero) .ref-links a {
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 0.35rem;
+  background: var(--bg);
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+main:has(.hero) .ref-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .stat-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -492,6 +649,150 @@ html[data-theme="dark"] .theme-icon-moon {
   text-decoration: none;
 }
 
+.publication-abstract-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.publication-abstract-btn:hover {
+  text-decoration-thickness: 2px;
+}
+
+.pub-abstract-dialog {
+  width: min(34rem, calc(100vw - 2rem));
+  max-height: min(28rem, calc(100vh - 4rem));
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.pub-abstract-dialog::backdrop {
+  background: rgba(12, 18, 24, 0.45);
+}
+
+[data-theme="dark"] .pub-abstract-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.pub-abstract-dialog-inner {
+  display: flex;
+  flex-direction: column;
+  max-height: min(28rem, calc(100vh - 4rem));
+  overflow: hidden;
+}
+
+.pub-abstract-dialog-header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-abstract-dialog-title {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.pub-abstract-close {
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.pub-abstract-close:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pub-abstract-close .iconify {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.pub-abstract-dialog-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0.9rem 1rem 1.1rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.publication[id] {
+  scroll-margin-top: 5rem;
+}
+
+.ref-list {
+  list-style: none;
+  margin: 0.75rem 0 1.5rem;
+  padding: 0;
+}
+
+.ref-item {
+  margin-bottom: 0.85rem;
+}
+
+.ref-title {
+  display: block;
+  font-weight: 600;
+}
+
+.ref-meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 0.15rem;
+}
+
+.ref-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.ref-links a {
+  text-decoration: none;
+}
+
+.ref-item-missing {
+  color: #b42318;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
 /* Team */
 .team-page-title {
   margin-bottom: 1.6rem;
@@ -578,10 +879,21 @@ html[data-theme="dark"] .theme-icon-moon {
 }
 
 /* Teaching */
+.teaching-cards {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
 .lecture-card {
   padding: 1.15rem 1.2rem 1.3rem;
-  margin-top: 1.15rem;
-  margin-bottom: 1.35rem;
+  margin: 0;
+}
+
+.lecture-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
 }
 
 .lecture-image {
@@ -601,6 +913,23 @@ html[data-theme="dark"] .theme-icon-moon {
 .lecture-meta {
   margin-top: -0.35rem;
   margin-bottom: 0.75rem;
+}
+
+.lecture-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin: 1rem 0 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.lecture-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  text-decoration: none;
 }
 
 .materials-grid .materials-card h3 {
@@ -655,5 +984,20 @@ html[data-theme="dark"] .theme-icon-moon {
 
   .stat-strip {
     grid-template-columns: 1fr;
+  }
+
+  .office-with-map {
+    grid-template-columns: 1fr;
+  }
+
+  .office-with-map .map-embed {
+    height: 280px;
+  }
+
+  main:has(.hero) h2:not(#key-references),
+  main:has(.hero) h2:not(#key-references) + p,
+  main:has(.hero) .ref-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

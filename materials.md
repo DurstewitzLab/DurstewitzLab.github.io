@@ -6,10 +6,6 @@ permalink: /materials/
 
 # Downloads and Materials
 
-<p class="muted">
-  Selected links to software, talks, and reference material used across the lab's dynamical-systems and neuroscience research.
-</p>
-
 <div class="resource-grid materials-grid">
   <article class="resource-card materials-card">
     <h3><span class="iconify" data-icon="mdi:code-tags" aria-hidden="true"></span> Code and Repositories</h3>
@@ -27,12 +23,20 @@ permalink: /materials/
 
 <div class="materials-list">
   <article class="publication publication-rich">
-    <h3><a href="https://nips.cc/virtual/2022/poster/53371">On the difficulty of learning chaotic dynamics with RNNs</a></h3>
-    <p class="muted publication-meta">Jonas Mikhaeil — NeurIPS 2022</p>
+    <h3><a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/118041">True Zero-Shot Inference of Dynamical Systems Preserving Long-Term Statistics</a></h3>
+    <p class="muted publication-meta">Christoph Hemmer — NeurIPS 2025</p>
   </article>
   <article class="publication publication-rich">
-    <h3><a href="https://openreview.net/forum?id=SyxS0T4tvB">Learning interpretable recurrent neural networks</a></h3>
-    <p class="muted publication-meta">Jonas Mikhaeil — ICLR 2020 Workshop</p>
+    <h3><a href="https://iclr.cc/virtual/2025/poster/29398">Learning Interpretable Hierarchical Dynamical Systems Models from Time Series Data</a></h3>
+    <p class="muted publication-meta">Manuel Brenner — ICLR 2025</p>
+  </article>
+  <article class="publication publication-rich">
+    <h3><a href="https://icml.cc/virtual/2024/poster/33658">Integrating Multimodal Data for Joint Generative Modeling of Complex Dynamics</a></h3>
+    <p class="muted publication-meta">Manuel Brenner — ICML 2024</p>
+  </article>
+  <article class="publication publication-rich">
+    <h3><a href="https://icml.cc/virtual/2024/poster/34459">Optimal Recurrent Network Topologies for Dynamical Systems Reconstruction</a></h3>
+    <p class="muted publication-meta">Christoph Hemmer — ICML 2024</p>
   </article>
 </div>
 

@@ -1,0 +1,29 @@
+{%- comment -%}
+  Reference list. Usage:
+    {% include refs.html ids="durstewitz2026position,hemmer2026true,Durstewitz2023" %}
+{%- endcomment -%}
+{%- assign ref_ids = include.ids | split: ',' -%}
+<ul class="ref-list">
+{%- for raw_id in ref_ids -%}
+  {%- assign ref_id = raw_id | strip -%}
+  {%- assign pub = site.data.publications | where: "id", ref_id | first -%}
+  {%- if pub -%}
+  <li class="ref-item" id="ref-{{ pub.id }}">
+    <span class="ref-title">{{ pub.title }}</span>
+    <span class="ref-meta">{{ pub.authors }}. {% if pub.venue %}{{ pub.venue }}. {% endif %}{{ pub.year }}.</span>
+    <span class="ref-links">
+      {%- if pub.link -%}<a href="{{ pub.link }}">Article</a>{%- endif -%}
+      {%- if pub.doi -%}
+        {%- if pub.doi contains 'doi.org' -%}
+          <a href="{{ pub.doi }}">DOI</a>
+        {%- else -%}
+          <a href="https://doi.org/{{ pub.doi }}">DOI</a>
+        {%- endif -%}
+      {%- endif -%}
+    </span>
+  </li>
+  {%- else -%}
+  <li class="ref-item ref-item-missing">[missing publication: {{ ref_id }}]</li>
+  {%- endif -%}
+{%- endfor -%}
+</ul>

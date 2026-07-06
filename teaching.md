@@ -4,7 +4,7 @@ title: Teaching
 permalink: /teaching/
 ---
 
-# Teaching and Lecture Recordings
+# Teaching
 
 <div class="teaching-cards" data-teaching-cards>
 {% for lecture in site.data.teaching %}
@@ -26,6 +26,14 @@ permalink: /teaching/
           <li>{{ item }}</li>
         {% endfor %}
       </ul>
+    {% endif %}
+    {% if lecture.moodle and lecture.moodle != "" %}
+      <p class="lecture-links">
+        <a href="{{ lecture.moodle }}">
+          <span class="iconify" data-icon="mdi:school-outline" aria-hidden="true"></span>
+          Link to Moodle
+        </a>
+      </p>
     {% endif %}
   </section>
 {% endfor %}
