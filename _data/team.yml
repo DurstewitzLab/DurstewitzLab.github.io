@@ -153,9 +153,11 @@
 
 - name: Jonas Mikhaeil
   role: Alumni
+  website: "https://statmodeling.stat.columbia.edu/author/jonas/"
 
 - name: Leonard Bereska
   role: Alumni
+  website: "https://leonardbereska.github.io/"
 
 - name: Saranraj Nambusubramaniyan
   role: Alumni
