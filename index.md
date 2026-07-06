@@ -23,7 +23,8 @@ permalink: /
 </figure>
 {% endif %}
 
-# What we do …
+# Welcome to our website! 
+We are a team of researchers working on the intersection of machine learning, dynamical systems, and neuroscience. Our research can be roughly categorized into the following areas:
 
 ## Machine Learning (ML) & AI for Dynamical Systems and Time Series
 
