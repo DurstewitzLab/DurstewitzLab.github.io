@@ -37,6 +37,8 @@
 
 - name: Georg Trede
   role: PhD Candidate
+  portrait:
+    path: assets/images/team/georg_trede.png
 
 - name: Charlotte Doll
   role: PhD Candidate
