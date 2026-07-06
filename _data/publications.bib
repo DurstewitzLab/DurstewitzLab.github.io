@@ -1,3 +1,12 @@
+@article{trede2026topological,
+  title={Topological Out-of-Domain Generalization in Dynamical Systems Reconstruction},
+  author={Trede, Georg and Doll, Charlotte Ricarda and Weber, Elias and Durstewitz, Daniel},
+  journal={arXiv preprint arXiv:2606.22969},
+  year={2026},
+  abstract={Predicting the behavior of dynamical systems (DS) beyond the dynamical and parameter regimes observed in training is a pivotal and essentially unresolved problem in scientific ML. It is central to any good scientific theory, which we expect to be able to make predictions about regimes not covered by currently available data. Recent hierarchical and hyper-network guided approaches for DS reconstruction (DSR) enable training on many DS simultaneously, and revealed that extracted latent features are often related to crucial control parameters of the underlying DS that varied across the training corpus. However, true out-of-domain forecasting abilities of these models, e.g., across tipping points, remain limited, and fine-tuning, or even full model retraining, on time series from the new dynamical regime is usually required. Here, we mathematically analyze the root of these limitations in previous model formulations and identify three core shortcomings rooted in a mismatch between structural assumptions of the reconstruction model and typical properties of physical systems. We propose a combination of remedies for these shortcomings, most importantly feature splitting, and furthermore derive a closed-form bound on the reliable extrapolation range. We demonstrate empirically that our techniques allow for accurate zero-shot prediction into new dynamical regimes, outside the observed training regime, as, e.g., encountered across tipping points.},
+  url={https://arxiv.org/abs/2606.22969}
+}
+
 @article{hess2026parallel,
   title={Parallel-in-Time Training of Recurrent Neural Networks for Dynamical Systems Reconstruction},
   author={Hess, Florian and Götz, Florian and Durstewitz, Daniel},
@@ -14,40 +23,6 @@
   year={2026},
   abstract={Identity teacher forcing (ITF) enables stable training of deterministic recurrent surrogates for chaotic dynamical systems and has been highly effective for dynamical systems reconstruction (DSR) with recurrent neural networks (RNNs), including interpretable almost-linear RNNs (AL-RNNs). However, as an intervention-based prediction loss (and thus a generalized Bayes update), teacher forcing need not match the free-running model's marginal likelihood geometry. We compare the objective-induced curvatures of ITF and marginal likelihood in a probabilistic switching augmentation of AL-RNNs, estimating ambiguity-aware observed information via Louis' identity. In the switching setting studied here, conditioning on a single forced regime path (as ITF does) inflates curvature, while marginal likelihood curvature is reduced by a missing-information correction when multiple switching explanations remain plausible. In Lorenz-63 experiments, windowed evidence fine-tuning improves held-out evidence but can degrade dynamical quantities of interest (QoIs) relative to ITF-pretrained models.},
   url={https://arxiv.org/abs/2604.25904}
-}
-
-@article{cao2026dslassocov,
-  title={dsLassoCov: a federated Lasso approach incorporating covariate control},
-  author={Cao, Han and Anguita-Ruiz, Augusto and Warembourg, Charline and Escribà-Montagut, Xavier and Vrijheid, Martine and Gonzalez, Juan R and Cadman, Tim and Setó-Llorens, Adrià and Schneider-Lindner, Verena and Durstewitz, Daniel and others},
-  journal={Scientific Reports},
-  year={2026},
-  publisher={Nature Publishing Group UK London},
-  abstract={Machine learning has been widely adopted in biomedical research, fueled by the increasing availability of data. However, integrating datasets across institutions is challenging due to legal restrictions and data governance complexities. Federated learning allows the direct, privacy preserving training of machine learning models using geographically distributed datasets, but faces the challenge of how to appropriately control for covariate effects. The naive implementation of conventional covariate control methods in federated learning scenarios is often impractical due to the substantial communication costs, particularly with high-dimensional data. To address this issue, we introduce dsLassoCov, a machine learning approach designed to control for covariate effects and allow an efficient training in federated setting. In biomedical analysis, this may support the identification of biomarker candidates while accounting for the effect of confounding. Using simulated data, we demonstrate that dsLassoCov can efficiently and effectively manage confounding effects during model training. In our real-world data analysis, we replicated a large-scale exposome analysis using data from six geographically distinct databases, achieving results consistent with previous studies. By addressing the challenge of covariate control, our proposed approach can accelerate the application of federated learning in large-scale biomedical studies.},
-  url={https://www.nature.com/articles/s41598-026-48845-0}
-}
-
-@article{cao2026multi,
-  title={A multi-task learning approach combining regression and classification tasks for joint feature selection},
-  author={Cao, Han and Rajan, Sivanesan and Hahn, Bianka and Kocak, Ersoy and Brenner, Manuel and Hess, Florian and Schefzik, Roman and Durstewitz, Daniel and Koppe, Georgia and Schwarz, Emanuel and others},
-  journal={Scientific Reports},
-  volume={16},
-  number={1},
-  pages={12699},
-  year={2026},
-  publisher={Nature Publishing Group UK London},
-  abstract={Multi-task learning (MTL) is a learning paradigm that enables the simultaneous training of multiple communicating algorithms, and has been widely applied in the biomedical analysis for shared biomarker identification. Although MTL has successfully supported either regression or classification tasks, incorporating mixed types of tasks into a unified MTL framework remains challenging, especially in biomedicine, where it can lead to biased biomarker identification. To address this issue, we propose an improved method of multi-task learning, MTLComb, which balances the weights of regression and classification tasks to promote unbiased biomarker identification. We demonstrate the algorithmic efficiency and clinical utility of MTLComb through analyses on both simulated data and actual biomedical studies pertaining to sepsis and schizophrenia. The code is available at https://github.com/transbioZI/MTLComb.},
-  url={https://www.nature.com/articles/s41598-026-43551-3}
-}
-
-@article{yang2026normative,
-  title={A normative reference for large-scale human brain dynamics across the lifespan},
-  author={Yang, Yanwu and Sharma, Nitin and Dai, Sicheng and Mallus, Francesco and Su, Guinan and Kand, Atharva and Zabihi, Mariam and Aln{\ae}s, Dag and Buitelaar, Jan K and Croy, Ilona and others},
-  journal={bioRxiv},
-  pages={2026--03},
-  year={2026},
-  publisher={Cold Spring Harbor Laboratory},
-  url={https://www.biorxiv.org/content/10.64898/2026.03.06.710057v1.abstract},
-  abstract={Human brain function emerges from dynamic reconfigurations of large-scale neural networks. While population-level reference charts have transformed the study of static brain structure and connectivity, an equivalent normative framework for intrinsic brain dynamics has been lacking. This gap has limited our ability to characterize individual variability, development, ageing, and mental health conditions at scale. Here, we establish a population-level normative reference for large-scale human brain dynamics using resting-state fMRI data from more than 10,000 individuals spanning the lifespan and 91 scanning sites. We derive a compact set of recurring brain-state configurations that are reproducible across scanners and acquisition paradigms and that generalize to previously unseen cohorts. Anchoring these dynamic states to normative lifespan models enables the quantification of individual deviations relative to population reference distributions. We show that intrinsic brain dynamics undergo systematic reorganization across development and ageing, with pronounced changes before early adulthood and more gradual modulation thereafter. Applying this framework across multiple mental health conditions reveals disorder-specific and highly heterogeneous deviations in brain dynamics that are not captured by static neuroimaging measures. Robust transfer to independent cohorts and longitudinal analyses demonstrate that normative brain dynamics can be reliably assessed out of distribution. These results delineate a population-scale dynamic architecture of the human brain and extend normative brain mapping from static phenotypes to the temporal domain, providing a reference framework for studying brain function across the lifespan in health and disease.}
 }
 
 @article{durstewitz2026position,
@@ -114,51 +89,6 @@ pubstate = {published},
 tppubtype = {inproceedings}
 }
 
-@article{fechtelpeter2025computational,
-title = {Computational network models for forecasting and control of mental health trajectories in digital applications},
-author = {Janik Fechtelpeter and Christian Rauschenberg and Christian Goetzl and Selina Hiller and Niklas Emonds and Silvia Krumm and Ulrich Reininghaus and Daniel Durstewitz and Georgia Koppe},
-year  = {2025},
-date = {2025-02-01},
-urldate = {2025-01-02},
-journal = {medRxiv},
-publisher = {Cold Spring Harbor Laboratory Press},
-abstract = {Ecological momentary assessments (EMA) have transformed mobile mental health by capturing real-time fluctuations in psychological states and behavior. While forecasting future states from EMA data is crucial for adaptive interventions, most current approaches to modeling the underlying psychological mechanisms rely on linear assumptions. These include common network based methods such as vector autoregression (VAR) or Kalman filtering, which assume fixed and proportional relationships among variables. However, a growing body of evidence suggests that psychological dynamics exhibit nonlinear properties raising concerns about the adequacy of linear models for both interpretation and prediction.
-
-Here, we leverage three independent 40-day micro-randomized trials (N=145) to benchmark a spectrum of models—from naïve baselines and linear network models to autoregressive Transformers and nonlinear state-space models (SSMs) built on piecewise-linear recurrent neural networks (PLRNNs). PLRNNs provided the most accurate forecasts, including predictions of how individuals responded to interventions. Beyond superior forecasting, the PLRNN’s latent-network structure allowed us to simulate how changes in individual psychological states spread through the system. This revealed interpretable patterns of influence—highlighting central network nodes like sad or down as high-impact intervention targets based on their strong ripple effects. Critically, performance remained robust under real-time retraining constraints and varying data completeness, underscoring the practical viability of nonlinear SSMs in deployed mobile mental health systems. Our results establish PLRNN-based forecasting as a powerful, interpretable foundation for real-time, model-predictive control of digital mental health.},
-keywords = {},
-pubstate = {published},
-tppubtype = {article},
-url={https://www.nature.com/articles/s41746-025-02252-3}
-}
-
-@article{brenner2026data,
-  title={Data-Driven Hierarchical Digital Twins of Social Interactions},
-  author={Brenner, Manuel and Guennouni, Ismail and Durstewitz, Daniel and NL, Stephanie and Schmidt, Stefanie Lis and Kirsch, Peter and Koppe, Georgia},
-  abstract={Social interactions are inherently complex, shaped by dynamic trust building, biases,
-and adaptive strategies. Yet in laboratory settings, their study is often constrained by
-small datasets that nonetheless encode rich and sophisticated cognitive processes. This
-scarcity has historically limited modeling approaches to hand-tailored frameworks that
-embed strong priors about the underlying mechanisms. Recent advances in data-driven
-modeling of latent dynamical processes provide an alternative, extracting generative
-models directly from behavioral data without restrictive assumptions. Building on
-these methods, we derive hierarchical digital twins from sparse, non-Gaussian
-investment sequences in repeated trust games. Our approach proceeds in three stages.
-First, we demonstrate that, despite the limited data, the inferred twins can accurately
-predict future investments, establishing predictive validity and providing a solid
-baseline for subsequent mechanistic analyses. Second, we analyze the latent dynamics
-of these models and show that they capture mechanistic structure in how investments
-and choice uncertainty are organized in state space and how social versus non-social
-cues are represented, in a way that parallels patterns observed directly in the empirical
-behavior. Third, we exploit the generative nature of the hierarchical digital twins to
-run in-silico experiments beyond the original data, such as probing how specific cues
-steer participants into trusting or mistrusting states and simulating responses to novel,
-unobserved cue-outcome combinations and trustee strategies. Together, this work
-demonstrates how generative digital twins open a new path toward mechanistic,
-data-driven accounts of social interaction dynamics that both reproduce observed
-behavior and support hypothesis generation in virtual environments.},
-}
-
-
 @article{durstewitz2025neuroscience,
 title = {What Neuroscience Can Teach AI About Learning in Continuously Changing Environments},
 author = {Daniel Durstewitz and Bruno Averbeck and Georgia Koppe},
@@ -171,22 +101,6 @@ keywords = {},
 pubstate = {published},
 tppubtype = {article},
 url={https://www.nature.com/articles/s42256-025-01146-z}
-}
-
-@article{hiller2025health,
-title = {Health-Promoting Effects and Everyday Experiences With a Mental Health App Using Ecological Momentary Assessments and AI-Based Ecological Momentary Interventions Among Young People: Qualitative Interview and Focus Group Study},
-author = {Selina Hiller and Christian Götzl and Christian Rauschenberg and Janik Fechtelpeter and Georgia Koppe and Eva Wierzba and Julia Sauter and Sina Dietrich and Daniel Durstewitz and Ulrich Reininghaus and others},
-year  = {2025},
-date = {2025-01-01},
-journal = {JMIR mHealth and uHealth},
-volume = {13},
-number = {1},
-pages = {e65106},
-publisher = {JMIR Publications Inc., Toronto, Canada},
-keywords = {},
-pubstate = {published},
-tppubtype = {article},
-url={https://mhealth.jmir.org/2025/1/e65106/}
 }
 
 @article{bahner2025abstract,
@@ -312,80 +226,7 @@ pubstate = {published},
 tppubtype = {article}
 }
 
-@article{chen2024quantifying,
-title = {Quantifying brain-functional dynamics using deep dynamical systems: Technical considerations},
-author = {Jiarui Chen and Anastasia Benedyk and Alexander Moldavski and Heike Tost and Andreas Meyer-Lindenberg and Urs Braun and Daniel Durstewitz and Georgia Koppe and Emanuel Schwarz},
-url = {https://www.cell.com/iscience/fulltext/S2589-0042(24)01770-X},
-year  = {2024},
-date = {2024-01-01},
-journal = {Iscience},
-volume = {27},
-number = {8},
-publisher = {Elsevier},
-abstract = {Summary 
-Both mental health and mental illness unfold in complex and unpredictable ways. Novel artificial intelligence approaches from the area of dynamical systems reconstruction can characterize such dynamics and help understand the underlying brain mechanisms, which can also be used as potential biomarkers. However, applying deep learning to model dynamical systems at the individual level must overcome numerous computational challenges to be reproducible and clinically useful. In this study, we performed an extensive analysis of these challenges using generative modeling of brain dynamics from fMRI data as an example and demonstrated their impact on classifying patients with schizophrenia and major depression. This study highlights the tendency of deep learning models to identify functionally unique solutions during parameter optimization, which severely impacts the reproducibility of downstream predictions. We hope this study guides the future development of individual-level generative models and similar machine learning approaches aimed at identifying reproducible biomarkers of mental illness.},
-keywords = {},
-pubstate = {published},
-tppubtype = {article}
-}
-
-@article{myin2024experience,
-title = {The experience sampling methodology as a digital clinical tool for more person-centered mental health care: an implementation research agenda},
-author = {Inez Myin-Germeys and Anita Schick and Thomas Ganslandt and Michal Hajdúk and Anton Heretik and Ine Van Hoyweghen and Glenn Kiekens and Georgia Koppe and Luca Marelli and Iveta Nagyova and others},
-url = {https://www.cambridge.org/core/journals/psychological-medicine/article/experience-sampling-methodology-as-a-digital-clinical-tool-for-more-personcentered-mental-health-care-an-implementation-research-agenda/4DFE205393EFC90DBF095AE32D81B4E4},
-year  = {2024},
-date = {2024-01-01},
-journal = {Psychological Medicine},
-volume = {54},
-number = {11},
-pages = {2785–2793},
-publisher = {Cambridge University Press},
-abstract = {This position paper by the international IMMERSE consortium reviews the evidence of a digital mental health solution based on Experience Sampling Methodology (ESM) for advancing person-centered mental health care and outlines a research agenda for implementing innovative digital mental health tools into routine clinical practice. ESM is a structured diary technique recording real-time self-report data about the current mental state using a mobile application. We will review how ESM may contribute to (1) service user engagement and empowerment, (2) self-management and recovery, (3) goal direction in clinical assessment and management of care, and (4) shared decision-making. However, despite the evidence demonstrating the value of ESM-based approaches in enhancing person-centered mental health care, it is hardly integrated into clinical practice. Therefore, we propose a global research agenda for implementing ESM in routine mental health care addressing six key challenges: (1) the motivation and ability of service users to adhere to the ESM monitoring, reporting and feedback, (2) the motivation and competence of clinicians in routine healthcare delivery settings to integrate ESM in the workflow, (3) the technical requirements and (4) governance requirements for integrating these data in the clinical workflow, (5) the financial and competence related resources related to IT-infrastructure and clinician time, and (6) implementation studies that build the evidence-base. While focused on ESM, the research agenda holds broader implications for implementing digital innovations in mental health. This paper calls for a shift in focus from developing new digital interventions to overcoming implementation barriers, essential for achieving a true transformation toward person-centered care in mental health.},
-keywords = {},
-pubstate = {published},
-tppubtype = {article}
-}
-
-@article{spanagel2024recode,
-title = {The ReCoDe addiction research consortium: Losing and regaining control over drug intake—Findings and future perspectives},
-author = {Rainer Spanagel and Patrick Bach and Tobias Banaschewski and Anne Beck and Felix Bermpohl and Rick E Bernardi and Christian Beste and Lorenz Deserno and Daniel Durstewitz and Ulrich Ebner-Priemer and others},
-url = {https://onlinelibrary.wiley.com/doi/full/10.1111/adb.13419},
-year  = {2024},
-date = {2024-01-01},
-journal = {Addiction Biology},
-volume = {29},
-number = {7},
-pages = {e13419},
-publisher = {Wiley Online Library},
-abstract = {Substance use disorders (SUDs) are seen as a continuum ranging from goal-directed and hedonic drug use to loss of control over drug intake with aversive consequences for mental and physical health and social functioning. The main goals of our interdisciplinary German collaborative research centre on Losing and Regaining Control over Drug Intake (ReCoDe) are (i) to study triggers (drug cues, stressors, drug priming) and modifying factors (age, gender, physical activity, cognitive functions, childhood adversity, social factors, such as loneliness and social contact/interaction) that longitudinally modulate the trajectories of losing and regaining control over drug consumption under real-life conditions. (ii) To study underlying behavioural, cognitive and neurobiological mechanisms of disease trajectories and drug-related behaviours and (iii) to provide non-invasive mechanism-based interventions. These goals are achieved by: (A) using innovative mHealth (mobile health) tools to longitudinally monitor the effects of triggers and modifying factors on drug consumption patterns in real life in a cohort of 900 patients with alcohol use disorder. This approach will be complemented by animal models of addiction with 24/7 automated behavioural monitoring across an entire disease trajectory; i.e. from a naïve state to a drug-taking state to an addiction or resilience-like state. (B) The identification and, if applicable, computational modelling of key molecular, neurobiological and psychological mechanisms (e.g., reduced cognitive flexibility) mediating the effects of such triggers and modifying factors on disease trajectories. (C) Developing and testing non-invasive interventions (e.g., Just-In-Time-Adaptive-Interventions (JITAIs), various non-invasive brain stimulations (NIBS), individualized physical activity) that specifically target the underlying mechanisms for regaining control over drug intake. Here, we will report on the most important results of the first funding period and outline our future research strategy.},
-keywords = {},
-pubstate = {published},
-tppubtype = {article}
-}
-
-@article{reininghaus2024strategies,
-title = {Strategies, processes, outcomes, and costs of implementing experience sampling-based monitoring in routine mental health care in four European countries: study protocol for the IMMERSE effectiveness-implementation study},
-author = {Ulrich Reininghaus and Matthias Schwannauer and Islay Barne and Joanne R Beames and Rafaël A Bonnier and Manuel Brenner and Dagmar Breznoščáková and Daniel Dančík and Manuela De Allegri and Simona Di Folco and Daniel Durstewitz and others},
-url = {https://link.springer.com/article/10.1186/s12888-024-05839-4},
-year  = {2024},
-date = {2024-01-01},
-journal = {BMC psychiatry},
-volume = {24},
-number = {1},
-pages = {465},
-publisher = {Springer},
-abstract = {Background 
-Recent years have seen a growing interest in the use of digital tools for delivering person-centred mental health care. Experience Sampling Methodology (ESM), a structured diary technique for capturing moment-to-moment variation in experience and behaviour in service users’ daily life, reflects a particularly promising avenue for implementing a person-centred approach. While there is evidence on the effectiveness of ESM-based monitoring, uptake in routine mental health care remains limited. The overarching aim of this hybrid effectiveness-implementation study is to investigate, in detail, reach, effectiveness, adoption, implementation, and maintenance as well as contextual factors, processes, and costs of implementing ESM-based monitoring, reporting, and feedback into routine mental health care in four European countries (i.e., Belgium, Germany, Scotland, Slovakia). 
-Methods 
-In this hybrid effectiveness-implementation study, a parallel-group, assessor-blind, multi-centre cluster randomized controlled trial (cRCT) will be conducted, combined with a process and economic evaluation. In the cRCT, 24 clinical units (as the cluster and unit of randomization) at eight sites in four European countries will be randomly allocated using an unbalanced 2:1 ratio to one of two conditions: (a) the experimental condition, in which participants receive a Digital Mobile Mental Health intervention (DMMH) and other implementation strategies in addition to treatment as usual (TAU) or (b) the control condition, in which service users are provided with TAU. Outcome data in service users and clinicians will be collected at four time points: at baseline (t0), 2-month post-baseline (t1), 6-month post-baseline (t2), and 12-month post-baseline (t3). The primary outcome will be patient-reported service engagement assessed with the service attachment questionnaire at 2-month post-baseline. The process and economic evaluation will provide in-depth insights into in-vivo context-mechanism-outcome configurations and economic costs of the DMMH and other implementation strategies in routine care, respectively. 
-Discussion 
-If this trial provides evidence on reach, effectiveness, adoption, implementation and maintenance of implementing ESM-based monitoring, reporting, and feedback, it will form the basis for establishing its public health impact and has significant potential to bridge the research-to-practice gap and contribute to swifter ecological translation of digital innovations to real-world delivery in routine mental health care.},
-keywords = {},
-pubstate = {published},
-tppubtype = {article}
-}
-
-@inproceedings{Eisenmann2023,
+@inproceedings{eisenmann2023bifurcations,
 title = {Bifurcations and loss jumps in RNN training},
 author = {Lukas Eisenmann and Zahra Monfared and Niclas Alexander Göring and Daniel Durstewitz},
 year  = {2023},
@@ -416,10 +257,11 @@ tions in training. Thus, besides facilitating the DST analysis of trained RNNs, 
 algorithm provides a powerful instrument for analyzing the training process itself.},
 keywords = {},
 pubstate = {published},
-tppubtype = {inproceedings}
+tppubtype = {inproceedings},
+url={https://arxiv.org/abs/2310.17561}
 }
 
-@inproceedings{Hess2023,
+@inproceedings{hess2023generalized,
 title = {Generalized Teacher Forcing for Learning Chaotic Dynamics},
 author = {Florian Hess and Zahra Monfared and Manuel Brenner and Daniel Durstewitz},
 url = {https://proceedings.mlr.press/v202/hess23a.html},
@@ -434,7 +276,7 @@ pubstate = {published},
 tppubtype = {inproceedings}
 }
 
-@article{Durstewitz2023,
+@article{durstewitz2023reconstructing,
 title = {Reconstructing Computational Dynamics from Neural Measurements with Recurrent Neural Networks},
 author = {Daniel Durstewitz and Georgia Koppe and Max Ingo Thurm},
 url = {https://www.nature.com/articles/s41583-023-00740-7},
