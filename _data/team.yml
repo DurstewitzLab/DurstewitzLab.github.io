@@ -42,6 +42,8 @@
 
 - name: Charlotte Doll
   role: PhD Candidate
+  portrait:
+    path: assets/images/team/charlotte_doll.jpg
 
 - name: Sámuel Szajbély
   role: PhD Candidate
