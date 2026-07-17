@@ -59,7 +59,8 @@
 
 - name: Zekai Xu
   role: PhD Candidate
-
+  portrait:
+    path: assets/images/team/zekai_xu.jpg
 
 - name: Niklas Thorsson
   role: Master Student
